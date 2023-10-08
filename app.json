@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/about/about",
+        "pages/food/food",
+        "pages/shop/shop"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#43bf92",
+        "navigationBarTitleText": "安心食疗",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#656565",
+        "selectedColor": "#43bf92",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "",
+                "selectedIconPath": ""
+            },
+            {
+                "pagePath": "pages/shop/shop",
+                "text": "购物",
+                "iconPath": "",
+                "selectedIconPath": ""
+            },
+            {
+              "pagePath": "pages/food/food",
+              "text": "食物",
+              "iconPath": "",
+              "selectedIconPath": ""
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "关于",
+                "iconPath": "",
+                "selectedIconPath": ""
+            }
+            
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
