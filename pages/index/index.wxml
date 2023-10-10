@@ -1,22 +1,46 @@
 <!--pages/index/index.wxml-->
 <view class="banner">
 	<swiper bindchange="swiperChange" autoplay="true" interval="3000" circular="true">
-		<swiper-item>
-			<image src="../img/1.png" mode=""/>
-			<view class="info">图片1</view>
-		</swiper-item>
-		<swiper-item>
-			<image src="../img/2.png" mode=""/>
-			<view class="info">图片2</view>
-		</swiper-item>
-		<swiper-item>
-			<image src="../img/3.png" mode=""/>
-			<view class="info">图片3</view>
-		</swiper-item>
-		<swiper-item>
-			<image src="../img/4.png" mode=""/>
-			<view class="info">图片4</view>
+		<swiper-item wx:for='{{bannerArr}}' wx:key='index'>
+			<image src="{{item.image}}" mode=""/>
+			<view class="info">{{item.title}}</view>
 		</swiper-item>
 	</swiper>
-	<view class="current">{{current}}/4</view>
+	<view class="current">{{current}}/{{bannerArr.length}}</view>
 </view>
+<!--每日推荐-->
+<view class="everyday">
+	<view class="item">
+		<image src="../img/1.png"/>
+		<view>每日一测</view>
+	</view>
+	<view class="item">
+		<image src="../img/2.png"/>
+		<view>每日食谱</view>
+	</view>
+</view>
+<!--列表信息-->
+<view class="wrapper">
+	<!-- <view class="list">
+	<view class="title">标题</view>
+	<view class="content">
+		<image src="../img/3.png"/>
+		<view class="text">
+			<view class="desc">内容简介</view>
+			<view class="num"><text>1230</text>阅读</view>
+		</view>
+		</view>
+
+	</view> -->
+	<view class="list" wx:for='{{listArr}}' wx:key='index'>
+	<view class="title">{{item.title}}</view>
+	<view class="content">
+		<image src="{{item.image}}"/>
+		<view class="text">
+			<view class="desc">{{item.desc}}</view>
+			<view class="num"><text>{{item.readNum}}</text>阅读</view>
+		</view>
+		</view>
+	</view>
+</view>
+

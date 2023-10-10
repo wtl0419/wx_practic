@@ -34,3 +34,66 @@
 	font-size: 28rpx;
 	padding: 10rpx;
 }
+.everyday{
+	padding: 20rpx;
+	justify-content: space-around;
+	display: flex;
+}
+.item{
+	text-align: center;
+	font-size: 30rpx;
+	color:#999;
+}
+.item image{
+	width: 306rpx;
+	height: 185rpx;
+}
+/*列表信息*/
+.wrapper{
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+}
+.list{
+	border-bottom: 1rpx solid #eee;
+	padding-bottom: 20rpx;
+	margin-bottom: 30rpx;
+}
+.list .title{
+	font-size: 32rpx;
+	color: '#1a1a1a';
+	margin-bottom: 10rpx;
+}
+.list .content{
+	display: flex;
+}
+.content image{
+	width: 210rpx;
+	height: 140rpx;
+	padding-right: 20rpx;
+}
+.text{
+	flex: 1;
+	background: white;
+	height: 140rpx;
+	font-size: 28rpx;
+	color: #777777;
+	position: relative;
+}
+.desc{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.num{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #4b4b4b;
+	font-size: 26rpx;
+}
+.num text{
+	color: red;
+	padding-right: 4rpx;
+}
