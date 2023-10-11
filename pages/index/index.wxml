@@ -2,7 +2,7 @@
 <view class="banner">
 	<swiper bindchange="swiperChange" autoplay="true" interval="3000" circular="true">
 		<swiper-item wx:for='{{bannerArr}}' wx:key='index'>
-			<image src="{{item.image}}" mode=""/>
+			<image src="{{item.image}}" mode="" />
 			<view class="info">{{item.title}}</view>
 		</swiper-item>
 	</swiper>
@@ -11,11 +11,11 @@
 <!--每日推荐-->
 <view class="everyday">
 	<view class="item">
-		<image src="../img/1.png"/>
+		<image src="../img/1.png" />
 		<view>每日一测</view>
 	</view>
 	<view class="item">
-		<image src="../img/2.png"/>
+		<image src="../img/2.png" />
 		<view>每日食谱</view>
 	</view>
 </view>
@@ -32,15 +32,20 @@
 		</view>
 
 	</view> -->
+	<!--jump to and transfer data
+	click current list block entry that page, get it data
+	-->
 	<view class="list" wx:for='{{listArr}}' wx:key='index'>
-	<view class="title">{{item.title}}</view>
-	<view class="content">
-		<image src="{{item.image}}"/>
-		<view class="text">
-			<view class="desc">{{item.desc}}</view>
-			<view class="num"><text>{{item.readNum}}</text>阅读</view>
-		</view>
-		</view>
+		<navigator url="../indexDetail/indexDetail?code={{item.id}}">
+			<view class="title">{{item.title}}</view>
+			<view class="content">
+				<image src="{{item.image}}" />
+				<view class="text">
+					<view class="desc">{{item.desc}}</view>
+					<view class="num"><text>{{item.readNum}}</text>阅读</view>
+				</view>
+			</view>
+		</navigator>
 	</view>
-</view>
 
+</view>

@@ -3,8 +3,10 @@
         "pages/index/index",
         "pages/about/about",
         "pages/food/food",
-        "pages/shop/shop"
-        
+        "pages/shop/shop",
+        "pages/indexDetail/indexDetail",
+        "pages/hotCity/hotCity",
+        "pages/search/search"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -29,10 +31,10 @@
                 "selectedIconPath": ""
             },
             {
-              "pagePath": "pages/food/food",
-              "text": "食物",
-              "iconPath": "",
-              "selectedIconPath": ""
+                "pagePath": "pages/food/food",
+                "text": "食物",
+                "iconPath": "",
+                "selectedIconPath": ""
             },
             {
                 "pagePath": "pages/about/about",
@@ -40,7 +42,6 @@
                 "iconPath": "",
                 "selectedIconPath": ""
             }
-            
         ]
     },
     "style": "v2",

@@ -1,2 +1,13 @@
 <!--pages/food/food.wxml-->
-<text>pages/food/food.wxml</text>
+<view class="header">
+	<navigator class="address" url="../hotCity/hotCity" hover-class="none">北京</navigator>
+	<view class="search">
+		<navigator url="../search/search" hover-class="none">请输入你想要的内容</navigator>
+	</view>
+</view>
+<view class="type">
+	<view class="item">
+		<image src="../img/4.png"/>
+		<view class="info">美容美颜</view>
+	</view>
+</view>

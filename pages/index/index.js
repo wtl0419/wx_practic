@@ -11,7 +11,6 @@ Page({
     },
     //轮播图下标修改
     swiperChange:function(e){
-        console.log(e.detail);
         this.setData({
             current:e.detail.current+1
         })
