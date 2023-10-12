@@ -1,34 +1,18 @@
-// pages/food/food.js
-var myData=require('../../common/typeData');
-console.log(myData);
+// pages/typeList/typeList.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        location:'北京',
-        typeData:myData.list, //分类列表的导航数据
-        list:[],
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad:function(options) {
-        wx.request({
-          url: 'http://iwenwiki.com:3002/api/foods/list',
-          data:{
-            city:this.data.location,
-            page:1
-          },
-          success:(res)=>{//ES6箭头函数 没有this
-              console.log(res.data.data.result);
-              this.setData({
-                  list:res.data.data.result
-              })
-          }
-        })
+        console.log(options);
     },
 
     /**

@@ -1,0 +1,10 @@
+<template name="list">
+	<view class="list">
+		<image class="img" src='{{item.pic}}'></image>
+		<view class="info">
+			<view class="title">{{item.name}}</view>
+			<view class="title">{{item.description}}</view>
+			<view class="buyNum"><text class="red">￥{{item.price}}</text>{{item.buynum}}付款</view>
+		</view>
+	</view>
+</template>

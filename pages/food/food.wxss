@@ -2,6 +2,7 @@
 page{
 	background: #f5f5f5;
 }
+@import '../../templates/productList.wxss';
 .header{
 	background: #fff;
 	padding: 20rpx;
